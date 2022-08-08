@@ -1,13 +1,12 @@
 ---
-title: "Presentation Ninja"
-subtitle: "&#x2694;&#xFE0F; xaringan +<br/>&#x1F60E; xaringanthemer"  
+title: "Political Capital and Moral Hazard"
+subtitle: "FIN 596 | Corporate Finance Seminar"  
 author: 
-  - "Yihui Xie"
-  - "Garrick Aden-Buie"
+  - "Adam Bozman"
 date: '`r Sys.Date()`'
 output:
   xaringan::moon_reader:
-    css: xaringan-themer.css
+    css: my-theme.css
     nature:
       slideNumberFormat: "%current%"
       highlightStyle: github
