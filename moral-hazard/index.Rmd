@@ -1,12 +1,14 @@
 ---
 title: "Political Capital and Moral Hazard"
-subtitle: "FIN 596 | Corporate Finance Seminar"  
+subtitle: "FIN 596 | Corporate Finance"  
 author: 
-  - "Adam Bozman"
+  - "Leonard Kostovetsky"
 date: '`r Sys.Date()`'
 output:
   xaringan::moon_reader:
-    css: my-theme.css
+    includes:
+      after_body: insert-logo.html
+    css: xaringan-themer.css
     nature:
       slideNumberFormat: "%current%"
       highlightStyle: github
@@ -31,31 +33,80 @@ knitr::opts_chunk$set(
 ```{r xaringan-themer, include=FALSE, warning=FALSE}
 library(xaringanthemer)
 style_duo_accent(
-  primary_color = "#1381B0",
-  secondary_color = "#FF961C",
-  inverse_header_color = "#FFFFFF"
+  primary_color = "#A60F2D",
+  secondary_color = "#4D4D4D",
+  inverse_header_color = "#FFFFFF",
+  # fonts
+  header_font_google = google_font("Martel"),
+  text_font_google = google_font("Lato"),
+  code_font_google = google_font("Fira Mono")
 )
 ```
 
-## Typography
+# Agenda
 
 Text can be **bold**, _italic_, ~~strikethrough~~, or `inline code`.
 
 [Link to another slide](#colors).
 
-### Lorem Ipsum
+- **Motivation**
 
-Dolor imperdiet nostra sapien scelerisque praesent curae metus facilisis dignissim tortor. 
-Lacinia neque mollis nascetur neque urna velit bibendum. 
-Himenaeos suspendisse leo varius mus risus sagittis aliquet venenatis duis nec.
+- **Data**
 
-- Dolor cubilia nostra nunc sodales
+- **Senate Banking Committee**
 
-- Consectetur aliquet mauris blandit
+- **'08 Financial Crisis**
 
-- Ipsum dis nec porttitor urna sed
+- **Moral Hazard**
+
+- **Conclusion**
 
 ---
+
+class: inverse center middle, hide-logo
+
+# Motivation
+
+--
+
+Motivation
+
+---
+
+class: inverse center middle, hide-logo
+
+# Data
+
+---
+
+class: inverse center middle, hide-logo
+
+# Senate Banking Committee
+
+---
+
+
+class: inverse center middle, hide-logo
+
+# '08 Financial Crisis
+
+---
+
+
+class: inverse center middle, hide-logo
+
+# Moral Hazard
+
+---
+
+
+class: inverse center middle, hide-logo
+
+# Conclusion
+
+---
+
+
 name: colors
 
 ## Colors
