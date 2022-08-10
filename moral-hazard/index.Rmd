@@ -43,11 +43,42 @@ style_duo_accent(
 )
 ```
 
+```{r xaringan-panelset, echo=FALSE}
+xaringanExtra::use_panelset()
+```
+
+
+# Panelset In R Markdown! {.panelset}
+
+## Tab One
+
+Amet enim aptent molestie vulputate pharetra
+vulputate primis et vivamus semper.
+
+## Tab Two
+
+### Sub heading one
+
+Sit etiam malesuada arcu fusce ullamcorper
+interdum proin tincidunt curabitur felis?
+
+## Tab Three
+
+Adipiscing mauris egestas vitae pretium 
+ad dignissim dictumst platea!
+
+# Another section
+
+This content won't appear in a panel.
+
+
+---
+
 # Agenda
 
 Text can be **bold**, _italic_, ~~strikethrough~~, or `inline code`.
 
-- Motivation
+- **Motivation**
 
 - **Data**
 
@@ -58,6 +89,21 @@ Text can be **bold**, _italic_, ~~strikethrough~~, or `inline code`.
 - **Moral Hazard**
 
 - **Conclusion**
+
+---
+
+# Panelset?
+
+.panelset[
+
+.panel[.panel-name[tab 1]
+
+]
+.panel[.panel-name[tab 2]
+
+]
+
+]
 
 ---
 
@@ -72,7 +118,7 @@ layout: true
 
 ---
 
-### Why
+### Historical Moral Hazard
 
 > This is a blockquote following a header.
 >
@@ -80,9 +126,9 @@ layout: true
 
 ---
 
-### What
+### '08 Financial Crisis
 
-#### What what 
+#### Pre-crisis
 
 ```{r eval=FALSE}
 ggplot(gapminder) +
@@ -90,8 +136,11 @@ ggplot(gapminder) +
   geom_point() +
   facet_wrap(~year)
 ```
+---
 
-#### JavaScript
+### '08 Financial Crisis
+
+#### Post-crisis
 
 ```js
 var fun = function lang(l) {
@@ -102,11 +151,26 @@ var fun = function lang(l) {
 
 ---
 
-### More R Code
+## Enron
 
-```{r eval=FALSE}
-dplyr::starwars %>% dplyr::slice_sample(n = 4)
-```
+background-image: url("https://www.youtube.com/embed/DgRLlqEvOT8")
+
+<src="https://www.youtube.com/embed/DgRLlqEvOT8" width="170px"/>
+
+.pull-left[
+[image](https://www.youtube.com/embed/DgRLlqEvOT8)
+]
+
+
+.pull-right[
+
+#### And an ordered list:
+
+1.  Item one
+1.  Item two
+1.  Item three
+1.  Item four
+]
 
 ---
 
@@ -136,11 +200,15 @@ stop("I hope you're sitting down for this")
 
 class: inverse center middle, hide-logo
 
+layout: false
+
 # Data
 
 ---
 
 class: inverse center middle, hide-logo
+
+layout: false
 
 # Senate Banking Committee
 
@@ -149,6 +217,8 @@ class: inverse center middle, hide-logo
 
 class: inverse center middle, hide-logo
 
+layout: false
+
 # '08 Financial Crisis
 
 ---
@@ -156,12 +226,16 @@ class: inverse center middle, hide-logo
 
 class: inverse center middle, hide-logo
 
+layout: false
+
 # Moral Hazard
 
 ---
 
 
 class: inverse center middle, hide-logo
+
+layout: false
 
 # Conclusion
 
