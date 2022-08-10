@@ -47,9 +47,7 @@ style_duo_accent(
 
 Text can be **bold**, _italic_, ~~strikethrough~~, or `inline code`.
 
-[Link to another slide](#colors).
-
-- **Motivation**
+- Motivation
 
 - **Data**
 
@@ -67,9 +65,72 @@ class: inverse center middle, hide-logo
 
 # Motivation
 
+---
+layout: true
+
+## Motivation
+
+---
+
+### Why
+
+> This is a blockquote following a header.
+>
+> When something is important enough, you do it even if the odds are not in your favor.
+
+---
+
+### What
+
+#### What what 
+
+```{r eval=FALSE}
+ggplot(gapminder) +
+  aes(x = gdpPercap, y = lifeExp, size = pop, color = country) +
+  geom_point() +
+  facet_wrap(~year)
+```
+
+#### JavaScript
+
+```js
+var fun = function lang(l) {
+  dateformat.i18n = require('./lang/' + l)
+  return true;
+}
+```
+
+---
+
+### More R Code
+
+```{r eval=FALSE}
+dplyr::starwars %>% dplyr::slice_sample(n = 4)
+```
+
+---
+
+```{r message=TRUE, eval=requireNamespace("cli", quietly = TRUE)}
+cli::cli_alert_success("It worked!")
+```
+
 --
 
-Motivation
+```{r message=TRUE}
+message("Just a friendly message")
+```
+
+--
+
+```{r warning=TRUE}
+warning("This could be bad...")
+```
+
+--
+
+```{r error=TRUE}
+stop("I hope you're sitting down for this")
+```
 
 ---
 
@@ -138,22 +199,6 @@ venenatis urna cursus eget nunc scelerisque viverra.
 
 ---
 
-# Big Topic or Inverse Slides `#`
-
-## Slide Headings `##`
-
-### Sub-slide Headings `###`
-
-#### Bold Call-Out `####`
-
-This is a normal paragraph text. Only use header levels 1-4.
-
-##### Possible, but not recommended `#####`
-
-###### Definitely don't use h6 `######`
-
----
-
 # Left-Column Headings
 
 .left-column[
@@ -171,17 +216,6 @@ Amet egestas neque tempor fermentum proin massa!
 
 Dolor elementum fermentum pharetra lectus arcu pulvinar.
 ]
-
----
-class: inverse center middle
-
-# Topic Changing Interstitial
-
---
-
-```
-class: inverse center middle
-```
 
 ---
 layout: true
