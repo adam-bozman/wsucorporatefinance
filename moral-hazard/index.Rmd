@@ -48,35 +48,8 @@ xaringanExtra::use_panelset()
 ```
 
 
-# Panelset In R Markdown! {.panelset}
-
-## Tab One
-
-Amet enim aptent molestie vulputate pharetra
-vulputate primis et vivamus semper.
-
-## Tab Two
-
-### Sub heading one
-
-Sit etiam malesuada arcu fusce ullamcorper
-interdum proin tincidunt curabitur felis?
-
-## Tab Three
-
-Adipiscing mauris egestas vitae pretium 
-ad dignissim dictumst platea!
-
-# Another section
-
-This content won't appear in a panel.
-
-
----
-
 # Agenda
 
-Text can be **bold**, _italic_, ~~strikethrough~~, or `inline code`.
 
 - **Motivation**
 
@@ -92,109 +65,62 @@ Text can be **bold**, _italic_, ~~strikethrough~~, or `inline code`.
 
 ---
 
-# Panelset?
-
-.panelset[
-
-.panel[.panel-name[tab 1]
-
-]
-.panel[.panel-name[tab 2]
-
-]
-
-]
-
----
-
 class: inverse center middle, hide-logo
 
 # Motivation
 
----
-layout: true
+--- 
 
-## Motivation
+# Motivation
 
----
+.panelset[
 
-### Historical Moral Hazard
+.panel[.panel-name[Historical Moral Hazard]
 
-> This is a blockquote following a header.
->
-> When something is important enough, you do it even if the odds are not in your favor.
 
----
-
-### '08 Financial Crisis
-
-#### Pre-crisis
-
-```{r eval=FALSE}
-ggplot(gapminder) +
-  aes(x = gdpPercap, y = lifeExp, size = pop, color = country) +
-  geom_point() +
-  facet_wrap(~year)
-```
----
-
-### '08 Financial Crisis
-
-#### Post-crisis
-
-```js
-var fun = function lang(l) {
-  dateformat.i18n = require('./lang/' + l)
-  return true;
-}
-```
-
----
-
-## Enron
-
-background-image: url("https://www.youtube.com/embed/DgRLlqEvOT8")
-
-<src="https://www.youtube.com/embed/DgRLlqEvOT8" width="170px"/>
+_"The critical component of the economic mechanism of moral hazard is the rational belief or expectation by market participants of outside intervention in adverse states of the world."_
 
 .pull-left[
-[image](https://www.youtube.com/embed/DgRLlqEvOT8)
+#### What does this mean?
+Financial risk taking by politically connected firms only makes sense if management at financial institutions had good reason to believe that the government would get involved.
 ]
-
-
 .pull-right[
+#### This Example 
+- Any mid-tier financial institution _believes_ they have clout above others
+- These same institutions have reason to expect this (e.g., political connections)
 
-#### And an ordered list:
+#### Other Examples
+- "Any situation in which one person makes the decision about how much risk to take, while someone else bears the cost if things go badly." - Paul Krugman
+- "The Greenspan put"
 
-1.  Item one
-1.  Item two
-1.  Item three
-1.  Item four
 ]
 
----
+]
+.panel[.panel-name['08 Financial Crisis]
 
-```{r message=TRUE, eval=requireNamespace("cli", quietly = TRUE)}
-cli::cli_alert_success("It worked!")
-```
+#### Pre-crisis
+-- 
+#### Post-crisis 
+]
+.panel[.panel-name[Subprime Market]
+.pull-left[
 
---
+#### Growing Power of Fannie and Freddie
 
-```{r message=TRUE}
-message("Just a friendly message")
-```
+- A growing subprime market (and collapse)
+- Government power in mortgage markets => established political connections
 
---
+1. Countrywide Financial lends below-market to Fannie Mae CEO and Senate Budget Committee Chairman
+1. Citigroup brought former Treasury secretary Robert Rubin on-board
+1. Enron established "close connections" to the Bush (W.) administration
 
-```{r warning=TRUE}
-warning("This could be bad...")
-```
+]
+.pull-right[
+<iframe width="500" height="400" src="https://www.youtube.com/embed/DgRLlqEvOT8" title="The Simpsons - Enron's ride of broken dreams" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+]
+]
 
---
-
-```{r error=TRUE}
-stop("I hope you're sitting down for this")
-```
+]
 
 ---
 
@@ -214,6 +140,11 @@ layout: false
 
 ---
 
+# Senate Banking Committee
+
+<iframe width="600" height="400" src="img/bankingupdated.mp4" title="Senate Banking Committee" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+---
 
 class: inverse center middle, hide-logo
 

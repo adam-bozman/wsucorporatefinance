@@ -4,7 +4,7 @@
     <title>Political Capital and Moral Hazard</title>
     <meta charset="utf-8" />
     <meta name="author" content="Leonard Kostovetsky" />
-    <meta name="date" content="2022-08-10" />
+    <meta name="date" content="2022-08-11" />
     <script src="index_files/header-attrs/header-attrs.js"></script>
     <link href="index_files/panelset/panelset.css" rel="stylesheet" />
     <script src="index_files/panelset/panelset.js"></script>
@@ -33,7 +33,7 @@ class: center, middle, inverse, title-slide
 ### Leonard Kostovetsky
 ]
 .date[
-### 2022-08-10
+### 2022-08-11
 ]
 
 ---
@@ -46,35 +46,8 @@ class: center, middle, inverse, title-slide
 
 
 
-# Panelset In R Markdown! {.panelset}
-
-## Tab One
-
-Amet enim aptent molestie vulputate pharetra
-vulputate primis et vivamus semper.
-
-## Tab Two
-
-### Sub heading one
-
-Sit etiam malesuada arcu fusce ullamcorper
-interdum proin tincidunt curabitur felis?
-
-## Tab Three
-
-Adipiscing mauris egestas vitae pretium 
-ad dignissim dictumst platea!
-
-# Another section
-
-This content won't appear in a panel.
-
-
----
-
 # Agenda
 
-Text can be **bold**, _italic_, ~~strikethrough~~, or `inline code`.
 
 - **Motivation**
 
@@ -90,130 +63,62 @@ Text can be **bold**, _italic_, ~~strikethrough~~, or `inline code`.
 
 ---
 
-# Panelset?
-
-.panelset[
-
-.panel[.panel-name[tab 1]
-
-]
-.panel[.panel-name[tab 2]
-
-]
-
-]
-
----
-
 class: inverse center middle, hide-logo
 
 # Motivation
 
----
-layout: true
+--- 
 
-## Motivation
+# Motivation
 
----
+.panelset[
 
-### Historical Moral Hazard
-
-&gt; This is a blockquote following a header.
-&gt;
-&gt; When something is important enough, you do it even if the odds are not in your favor.
-
----
-
-### '08 Financial Crisis
-
-#### Pre-crisis
+.panel[.panel-name[Historical Moral Hazard]
 
 
-```r
-ggplot(gapminder) +
-  aes(x = gdpPercap, y = lifeExp, size = pop, color = country) +
-  geom_point() +
-  facet_wrap(~year)
-```
----
-
-### '08 Financial Crisis
-
-#### Post-crisis
-
-```js
-var fun = function lang(l) {
-  dateformat.i18n = require('./lang/' + l)
-  return true;
-}
-```
-
----
-
-## Enron
-
-background-image: url("https://www.youtube.com/embed/DgRLlqEvOT8")
-
-&lt;src="https://www.youtube.com/embed/DgRLlqEvOT8" width="170px"/&gt;
+_"The critical component of the economic mechanism of moral hazard is the rational belief or expectation by market participants of outside intervention in adverse states of the world."_
 
 .pull-left[
-[image](https://www.youtube.com/embed/DgRLlqEvOT8)
+#### What does this mean?
+Financial risk taking by politically connected firms only makes sense if management at financial institutions had good reason to believe that the government would get involved.
 ]
-
-
 .pull-right[
+#### This Example 
+- Any mid-tier financial institution _believes_ they have clout above others
+- These same institutions have reason to expect this (e.g., political connections)
 
-#### And an ordered list:
+#### Other Examples
+- "Any situation in which one person makes the decision about how much risk to take, while someone else bears the cost if things go badly." - Paul Krugman
+- "The Greenspan put"
 
-1.  Item one
-1.  Item two
-1.  Item three
-1.  Item four
 ]
 
----
+]
+.panel[.panel-name['08 Financial Crisis]
 
+#### Pre-crisis
+-- 
+#### Post-crisis 
+]
+.panel[.panel-name[Subprime Market]
+.pull-left[
 
-```r
-cli::cli_alert_success("It worked!")
-```
+#### Growing Power of Fannie and Freddie
 
-```
-## ✔ It worked!
-```
+- A growing subprime market (and collapse)
+- Government power in mortgage markets =&gt; established political connections
 
---
+1. Countrywide Financial lends below-market to Fannie Mae CEO and Senate Budget Committee Chairman
+1. Citigroup brought former Treasury secretary Robert Rubin on-board
+1. Enron established "close connections" to the Bush (W.) administration
 
+]
+.pull-right[
+&lt;iframe width="500" height="400" src="https://www.youtube.com/embed/DgRLlqEvOT8" title="The Simpsons - Enron's ride of broken dreams" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;
+]
+]
 
-```r
-message("Just a friendly message")
-```
-
-```
-## Just a friendly message
-```
-
---
-
-
-```r
-warning("This could be bad...")
-```
-
-```
-## Warning: This could be bad...
-```
-
---
-
-
-```r
-stop("I hope you're sitting down for this")
-```
-
-```
-## Error in eval(expr, envir, enclos): I hope you're sitting down for this
-```
+]
 
 ---
 
@@ -233,6 +138,11 @@ layout: false
 
 ---
 
+# Senate Banking Committee
+
+&lt;iframe width="600" height="400" src="img/bankingupdated.mp4" title="Senate Banking Committee" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;
+
+---
 
 class: inverse center middle, hide-logo
 
@@ -551,8 +461,8 @@ exclude: false
 DT::datatable(head(mtcars), fillContainer = FALSE, options = list(pageLength = 4))
 ```
 
-<div id="htmlwidget-9f2cf7d46a85ddfe754a" style="width:100%;height:auto;" class="datatables html-widget"></div>
-<script type="application/json" data-for="htmlwidget-9f2cf7d46a85ddfe754a">{"x":{"filter":"none","vertical":false,"fillContainer":false,"data":[["Mazda RX4","Mazda RX4 Wag","Datsun 710","Hornet 4 Drive","Hornet Sportabout","Valiant"],[21,21,22.8,21.4,18.7,18.1],[6,6,4,6,8,6],[160,160,108,258,360,225],[110,110,93,110,175,105],[3.9,3.9,3.85,3.08,3.15,2.76],[2.62,2.875,2.32,3.215,3.44,3.46],[16.46,17.02,18.61,19.44,17.02,20.22],[0,0,1,1,0,1],[1,1,1,0,0,0],[4,4,4,3,3,3],[4,4,1,1,2,1]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>mpg<\/th>\n      <th>cyl<\/th>\n      <th>disp<\/th>\n      <th>hp<\/th>\n      <th>drat<\/th>\n      <th>wt<\/th>\n      <th>qsec<\/th>\n      <th>vs<\/th>\n      <th>am<\/th>\n      <th>gear<\/th>\n      <th>carb<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"pageLength":4,"columnDefs":[{"className":"dt-right","targets":[1,2,3,4,5,6,7,8,9,10,11]},{"orderable":false,"targets":0}],"order":[],"autoWidth":false,"orderClasses":false,"lengthMenu":[4,10,25,50,100]}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-cca0f452f3e59e805a6b" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-cca0f452f3e59e805a6b">{"x":{"filter":"none","vertical":false,"fillContainer":false,"data":[["Mazda RX4","Mazda RX4 Wag","Datsun 710","Hornet 4 Drive","Hornet Sportabout","Valiant"],[21,21,22.8,21.4,18.7,18.1],[6,6,4,6,8,6],[160,160,108,258,360,225],[110,110,93,110,175,105],[3.9,3.9,3.85,3.08,3.15,2.76],[2.62,2.875,2.32,3.215,3.44,3.46],[16.46,17.02,18.61,19.44,17.02,20.22],[0,0,1,1,0,1],[1,1,1,0,0,0],[4,4,4,3,3,3],[4,4,1,1,2,1]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>mpg<\/th>\n      <th>cyl<\/th>\n      <th>disp<\/th>\n      <th>hp<\/th>\n      <th>drat<\/th>\n      <th>wt<\/th>\n      <th>qsec<\/th>\n      <th>vs<\/th>\n      <th>am<\/th>\n      <th>gear<\/th>\n      <th>carb<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"pageLength":4,"columnDefs":[{"className":"dt-right","targets":[1,2,3,4,5,6,7,8,9,10,11]},{"orderable":false,"targets":0}],"order":[],"autoWidth":false,"orderClasses":false,"lengthMenu":[4,10,25,50,100]}},"evals":[],"jsHooks":[]}</script>
 
 ---
 layout: true
