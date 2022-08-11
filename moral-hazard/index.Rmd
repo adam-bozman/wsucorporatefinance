@@ -47,6 +47,9 @@ style_duo_accent(
 xaringanExtra::use_panelset()
 ```
 
+```{r xaringan-scribble, echo=FALSE}
+xaringanExtra::use_scribble()
+```
 
 # Agenda
 
@@ -64,12 +67,6 @@ xaringanExtra::use_panelset()
 - **Conclusion**
 
 ---
-
-class: inverse center middle, hide-logo
-
-# Motivation
-
---- 
 
 # Motivation
 
@@ -99,8 +96,18 @@ Financial risk taking by politically connected firms only makes sense if managem
 .panel[.panel-name['08 Financial Crisis]
 
 #### Pre-crisis
+_"Did they [political connections] play a role in risk taking by financial institutions that preceded the 2008 financial crisis?"_
+**A history of bailouts**
+- Continental Illinois (1984)
+- Savings and Loan (S&L, '80s & '90s)
+- Long-Term Capital Management (LTCM, 1998)
+
 -- 
-#### Post-crisis 
+#### Post-crisis
+- To rescue or not to rescue (Bear Sterns, Lehman Brothers, and AIG)? 
+- Finds firms with higher __precrisis__ leverage were more likely to go bankrupt and had lower stock returns
+- This result illustrates the negative effects of moral hazard
+
 ]
 .panel[.panel-name[Subprime Market]
 .pull-left[
@@ -142,16 +149,54 @@ layout: false
 
 # Senate Banking Committee
 
+.pull-left[
 <iframe width="600" height="400" src="img/bankingupdated.mp4" title="Senate Banking Committee" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+]
+.pull-right[
+**"The United State Senate Committee on Banking, Housing, and Urban Affairs"**
+- Membe
+- 
+- [A committee map](#committee)
+]
+
+---
+
+name: committee
+class: center, hide-logo
+background-image: url("img/fig1.png")
+background-size: contain
 
 ---
 
 class: inverse center middle, hide-logo
 
-layout: false
 
 # '08 Financial Crisis
 
+---
+
+# '08 Financial Crisis
+
+.panelset[
+
+.panel[.panel-name[Datetime]
+
+]
+.panel[.panel-name[Leverage]
+]
+.panel[.panel-name[Methodology]
+]
+.panel[.panel-name['08 Financial Crisis]
+
+]
+.panel[.panel-name[Bailouts]
+.left-column[
+### TARP
+### Dodd-Frank]
+
+
+]
+]
 ---
 
 
@@ -455,3 +500,6 @@ Slides created via the R packages:
 [gadenbuie/xaringanthemer](https://github.com/gadenbuie/xaringanthemer)
 
 The chakra comes from [remark.js](https://remarkjs.com), [**knitr**](http://yihui.name/knitr), and [R Markdown](https://rmarkdown.rstudio.com).
+
+
+
