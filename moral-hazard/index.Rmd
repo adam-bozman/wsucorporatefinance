@@ -72,17 +72,20 @@ xaringanExtra::use_scribble()
 
 .panelset[
 
-.panel[.panel-name[Historical Moral Hazard]
+.panel[.panel-name[History of Moral Hazard]
 
 
 _"The critical component of the economic mechanism of moral hazard is the rational belief or expectation by market participants of outside intervention in adverse states of the world."_
 
 .pull-left[
+#### How does this apply?
+Since Fannie Mae was established (1930s), the U.S. Government has promoted home ownership in its contemporary fashion.  The Community Reinvestment Act led to more low-income and urban community lending.  
+
 #### What does this mean?
 Financial risk taking by politically connected firms only makes sense if management at financial institutions had good reason to believe that the government would get involved.
 ]
 .pull-right[
-#### This Example 
+#### This Publication 
 - Any mid-tier financial institution _believes_ they have clout above others
 - These same institutions have reason to expect this (e.g., political connections)
 
@@ -133,35 +136,66 @@ _"Did they [political connections] play a role in risk taking by financial insti
 
 class: inverse center middle, hide-logo
 
-layout: false
-
 # Data
 
 ---
 
-class: inverse center middle, hide-logo
+# Data
 
-layout: false
+_The population for this study consists of all financial firms (SIC codes 6000-6999) trading on the NYSE, AMEX, and Nasdaq from 1973 through 2009.  Keeping with the literature, American Depository Receipts (ADRs), Real Estate Investments Trusts (REITs), foreign-based firms, close-end funds, etc. are excluded (only including stocks with CRSP codes of 10 or 11)._
+
+.pull-left[
+#### Databases:
+- Official Congressional Directory (historical membership of the Senate Banking Committee)
+- OpenSecrets - Center for Responsive Politics (lobbying data)
+- Boardex (politically connected directors at financial institutions)
+- Compustat (balance sheet data)
+- CRSP (stock-level data)
+- Thomson Financial (insider holdings)
+- HUD (subprime housing data)
+]
+.pull-right[
+#### A not-so-even split:
+- Control for natural log of firm assets (size)
+- Also control for ROA, cash holdings, dividends, and book-to-market ratio (scaled by assets and winsorized at 1% and 99%)
+- Calculated _Housing Price Growth_ (quarterly growth in the median)
+- Included a _Subprime_ dummy (control)
+- 34 public firms from 2003 - 2008 that were either subprime lenders or have subprime lender subsidiaries.
+]
+
+---
+
+name: sumstats
+class: center, hide-logo
+background-image: url("img/summary-stats.png")
+background-size: contain
+
+
+---
+class: inverse center middle, hide-logo
 
 # Senate Banking Committee
 
 ---
 
 # Senate Banking Committee
+
+_"Financial institutions that are located in a state with a senator on the Banking Committee potentially have a powerful ally that can improve their chances of survival if their exposure to risk leads to negative outcomes."_
 
 .pull-left[
 <iframe width="600" height="400" src="img/bankingupdated.mp4" title="Senate Banking Committee" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 ]
 .pull-right[
 **"The United State Senate Committee on Banking, Housing, and Urban Affairs"**
-- Membe
-- 
-- [A committee map](#committee)
+- Jurisdiction includes banking, insurance, financial markets, securities, international trade and finance, and economic policy
+- Confirm heads of executive departments and government agencies (e.g., Treasury, the Federal Reserve, and the SEC)
+- Senators have additional leverage over government officials because of their advise and consent power to confirm these officials
+- Most domestic financial institutions operate within state boundaries (e.g., United Bank of Iowa)
+- Avoid issues with census restructuring and movement around representatives 
 ]
 
 ---
 
-name: committee
 class: center, hide-logo
 background-image: url("img/fig1.png")
 background-size: contain
@@ -183,20 +217,36 @@ class: inverse center middle, hide-logo
 
 ]
 .panel[.panel-name[Leverage]
+#### Leverage is used to define the risk exposure of firms before and after the crisis.
+
+**A natural measure of firm risk exposure, _defined in this paper_ as the ratio of a firm's book value of debt to its book value of assets.**
+- Even while firms are subject to regulatory capital requirements, there is substantial variation in the use of leverage by banks, Gropp and Heider (2010)
+- This suggests, assuming banks attempt to abide by regulatory constraints, that capital requirements are only of secon-order importance in determining capital structure
+- Leverage may omit other forms of firms' exposure to risk, daily stock volatility is also calculated (standard deviation of daily returns across a calendar year) as an additional measure
 ]
 .panel[.panel-name[Methodology]
 ]
-.panel[.panel-name['08 Financial Crisis]
-
-]
 .panel[.panel-name[Bailouts]
-.left-column[
-### TARP
-### Dodd-Frank]
 
+#### TARP
+Treasury established several programs under the Troubled Assets Relief Program (TARP) in October 2008.  Congress initially authorized $700 billion through TARP, but this was reduced to $475 billion by the Dodd-Frank Wall Street Reform and Consumer Protection Act (Dodd-Frank Act).
 
+.pull-left[
+- $250 billion to banking institutions
+- $27 billion to "restart credit markets"
+]
+.pull-right[
+- $82 billion to U.S. Auto
+- $70 billion to AIG
+- $46 billion to families avoiding foreclosure
+]
+
+#### Dodd-Frank
+
+Following TARP, Dodd-Frank (2010) was enacted sweeping reforms - a direct response to '08 and TARP. _Repealed under Trump administration (2018)._ 
 ]
 ]
+
 ---
 
 
