@@ -54,13 +54,13 @@ xaringanExtra::use_scribble()
 
 # Agenda
 
-### Motivation
+### Motivation & Data
 
-### Dichotomization of Insider Trading
+### Direct Costs of Bankruptcy
 
-### Data & Research Design
+### Priority of Claims
 
-### Robustness
+> ### Methodologies
 
 ### Conclusion
 
@@ -68,246 +68,185 @@ xaringanExtra::use_scribble()
 
 class: inverse center middle, hide-logo
 
-# Motivation
-
----
-
-## Motivation
-
-### Mixed Results in Prior Literature 
-
-- Givoly and Palmon (1985 - 10b5, 1935 Securities Exchang Act) are unable to document a link between insider trading profits and subsequent disclosure events.
-
-- Noe (1999 - clustered voluntary disclosure) finds trading patterns to be unrelated to forecasted earnings news.
-
-- Ke et al. (2003 - technical default) find managers of distressed firms to 'dump then pump' rather than 'pump and dump'
-
-- **Rozeff and Zaman (1998) looks at investor overreaction and insider purchasing of value and growth stocks**
-
-  - Piotroski and Roulstone mirror much of Rozeff and Zaman's methodology
-
----
-
-class: inverse center middle, hide-logo
-
-# Dichotomization of Insider Trading
+# Motivation & Data
 
 ---
 
 layout: true 
 
-## Dichotomization of Insider Trading
+## Motivation & Data 
 
 ---
 
-### What is meant by 'contrarian'?
+### Bankruptcy Reform Act of 1978 (The Code)
 
-> A person who opposes or rejects popular opinion, especially in stock exchange dealing
+_The current Bankruptcy Code was enacted in 1978 and became effective on October 1, 1979._ 
 
-**The definition of contrarian, in a broad sense, is inherently ambiguous** 
+- This current code completely replaced the former Bankruptcy Act of 1898
 
-- In journalism, it's characterized by articles and books making counterintuitive claims
-- In science, it refers to those who challenge a scientific consensus
-- In investing, it refers to individuals speculating against movements and sentiments of most investors
+ - While the current code has been amended multiple times since 1978, but the core enactment is still used today
 
-_"Insider can earn excess profit by either recognizing pricing errors made by outsider or by having superior knowledge about future cash flow realizations."_
+- Most notably, this iteration of the code developed Chapter 11
+  
+  - Prior codes accounted for 'general provisions', 'case administration', 'creditors and debtors', and 'liquidation'
+  - Chapter 11 now allowed for 'reorganization'
+  - In most instances, Chapter 11 bankruptcy filings leave the debtor in control of its business operations - with some oversight
+    
+- Chapter 11 Plan
 
----
-
-## Typography
-
-Text can be **bold**, _italic_, ~~strikethrough~~, or `inline code`.
-
-[Link to another slide](#colors).
-
-### Lorem Ipsum
-
-Dolor imperdiet nostra sapien scelerisque praesent curae metus facilisis dignissim tortor. 
-Lacinia neque mollis nascetur neque urna velit bibendum. 
-Himenaeos suspendisse leo varius mus risus sagittis aliquet venenatis duis nec.
-
-- Dolor cubilia nostra nunc sodales
-
-- Consectetur aliquet mauris blandit
-
-- Ipsum dis nec porttitor urna sed
+ - 120 days to reorganize, a judge must approve (plausible without creditors)
 
 ---
-name: colors
 
-## Colors
+### Data  
 
-.left-column[
-Text color
+_Firms filing for bankruptcy from 1980 (44,000) jumped by 1986 (81,000)_
 
-[Link Color](#3)
+.pull-left[
 
-**Bold Color**
+37 New York Stock Exchanges (NYSE) and American Stock Exchange (AMEX) firms that filed petitions under the 1979 Code between October 1, November 1979 and December 31, 1986
 
-_Italic Color_
-
-`Inline Code`
+  1. SEC's annual report to Congress (contains all presentations by the SEC to bankruptcy courts)
+  1. The _Wall Street Journal Index_ listing of all firms that declare bankruptcy
+  1. _Compustat's_ Research File listing all firms dropped because of bankruptcy files
+  1. Firms listed as suspended or deleted from the Center for Research in Security Prices (CRSP) tapes
 ]
 
-.right-column[
-Lorem ipsum dolor sit amet, [consectetur adipiscing elit (link)](#3), 
-sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-Erat nam at lectus urna.
-Pellentesque elit ullamcorper **dignissim cras tincidunt (bold)** lobortis feugiat. 
-_Eros donec ac odio tempor_ orci dapibus ultrices. 
-Id porta nibh venenatis cras sed felis eget velit aliquet.
-Aliquam id diam maecenas ultricies mi.
-Enim sit amet 
-`code_color("inline")`
-venenatis urna cursus eget nunc scelerisque viverra.
+.pull-right[
+
+Financial institutions are excluded because they are not subject to the standard provisions of the bankruptcy code.  Because court documents are available only at the federal court where the petition is filed, budget and time constraints, data collection was confined to the following seven jurisdictions: 
+
+- Central District of California
+- Southern District of Florida
+- Northern District of Illinois
+- District of Massachusetts
+- Northern District of Michigan 
+- Southern District of New York
+- Northern District of Ohio
+
+]
+---
+
+### Data
+
+- Among these federal court locations, there were a total of 51 filings in the initial sample, but an additional 14 firms were excluded because:
+  1. Their bankruptcies were not resolved by May 31, 1989
+  1. Their data were being used by a bankruptcy judge and hence were not available for study
+  1. Their data had been removed from the court to an archive
+  
+- The final sample contains 37 firms with substantially shorter bankruptcy petition to resolution timing (2.5 years on average) relative to prior studies (12.5 years, Warner - 1977) 
+
+- These firms' ratio of debt to total assets is also 77%, 50% higher than the 51% listed on Compustat for all nonbankrupt firms
+
+---
+
+layout: false
+
+class: inverse center middle, hide-logo
+
+# Direct Costs of Bankruptcy
+
+---
+
+layout: true 
+
+## Direct Costs of Bankruptcy
+
+---
+
+### Direct vs Indirect Costs
+
+.panelset[
+.panel[.panel-name[Direct Costs]
+
+The direct costs of bankruptcy are the legal and other professional and administrative fees associated with the bankruptcy filing; they represent the measurable part of all bankruptcy costs.  
+
+Three measures are used to asses the magnitude of the direct costs of bankruptcy: 
+
+1. Market value of equity
+1. Book value of debt plus the market value of equity
+1. Book value of total assets
+
+- Market value of debt is not used because too few firms had any publicly traded debt 
+- Book value of debt is readily available and is used as a proxy for the market value of equity
+- The book value of total assets is used to ensure the results are not overstated by the large drop in market value of equity that occurs before the bankruptcy filing (Weiss, 1989)
+
+]
+.panel[.panel-name[Indirect Costs]
+
+The indirect bankruptcy costs are the uneasurable opportunity costs, including: 
+
+1. Lost sales and a decline in the value of inventory
+1. Increased operating costs, loss of employees and suppliers
+1. A reduction in the firm's competitiveness
+
+]
+.panel[.panel-name[Key Findings]
+
+#### Direct Costs of Bankruptcy 
+1. 20.6% of the market value of equity
+1. 3.1 % of the book value of debt plus the market value of equity
+1. 2.8% of the book value of total assets
+
+#### In Contrast To
+- 25% (Stanley and Girth, 1971) - total assets from financial statements
+- 7.5% (Ang, Chua, and McConnell, 1982) - liquidated value of firms
+- 4% (Warner, 1977) - mostly heavily regulated railroads included
+
+]
+.panel[.panel-name[Table 2]
+
+![](img/tab2.png)
+
+]
 ]
 
 ---
 
-# Big Topic or Inverse Slides `#`
+layout: false
 
-## Slide Headings `##`
+class: inverse center middle, hide-logo
 
-### Sub-slide Headings `###`
-
-#### Bold Call-Out `####`
-
-This is a normal paragraph text. Only use header levels 1-4.
-
-##### Possible, but not recommended `#####`
-
-###### Definitely don't use h6 `######`
+# Priority of Claims
 
 ---
 
-# Left-Column Headings
+layout: true 
 
-.left-column[
-## First
-
-## Second
-
-## Third
-]
-
-.right-column[
-Dolor quis aptent mus a dictum ultricies egestas.
-
-Amet egestas neque tempor fermentum proin massa!
-
-Dolor elementum fermentum pharetra lectus arcu pulvinar.
-]
-
----
-class: inverse center middle
-
-# Topic Changing Interstitial
-
---
-
-```
-class: inverse center middle
-```
-
----
-layout: true
-
-## Blocks
+## Priority of Claims
 
 ---
 
-### Blockquote
-
-> This is a blockquote following a header.
->
-> When something is important enough, you do it even if the odds are not in your favor.
+### Bankruptcy Reform Act of 1978 (The Code)
 
 ---
 
-### Code Blocks
+layout: false
 
-#### R Code
+class: inverse center middle, hide-logo
 
-```{r eval=FALSE}
-ggplot(gapminder) +
-  aes(x = gdpPercap, y = lifeExp, size = pop, color = country) +
-  geom_point() +
-  facet_wrap(~year)
-```
-
-#### JavaScript
-
-```js
-var fun = function lang(l) {
-  dateformat.i18n = require('./lang/' + l)
-  return true;
-}
-```
+# Priority of Claims
 
 ---
 
-### More R Code
+layout: true 
 
-```{r eval=FALSE}
-dplyr::starwars %>% dplyr::slice_sample(n = 4)
-```
+## Priority of Claims
 
 ---
 
-```{r message=TRUE, eval=requireNamespace("cli", quietly = TRUE)}
-cli::cli_alert_success("It worked!")
-```
+layout: false
 
---
+class: inverse center middle, hide-logo
 
-```{r message=TRUE}
-message("Just a friendly message")
-```
-
---
-
-```{r warning=TRUE}
-warning("This could be bad...")
-```
-
---
-
-```{r error=TRUE}
-stop("I hope you're sitting down for this")
-```
-
-
----
-layout: true
-
-## Tables
-
----
-exclude: `r if (requireNamespace("tibble", quietly=TRUE)) "false" else "true"`
-
-```{r eval=requireNamespace("tibble", quietly=TRUE)}
-tibble::as_tibble(mtcars)
-```
+# Conclusion
 
 ---
 
-```{r}
-knitr::kable(head(mtcars), format = 'html')
-```
+layout: true 
 
----
-exclude: `r if (requireNamespace("DT", quietly=TRUE)) "false" else "true"`
+## Conclusion
 
-```{r eval=requireNamespace("DT", quietly=TRUE)}
-DT::datatable(head(mtcars), fillContainer = FALSE, options = list(pageLength = 4))
-```
-
----
-layout: true
-
-## Lists
-
----
 
 .pull-left[
 #### Here is an unordered list:
@@ -328,117 +267,3 @@ layout: true
 1.  Item four
 ]
 
----
-
-### And a nested list:
-
-- level 1 item
-  - level 2 item
-  - level 2 item
-    - level 3 item
-    - level 3 item
-- level 1 item
-  - level 2 item
-  - level 2 item
-  - level 2 item
-- level 1 item
-  - level 2 item
-  - level 2 item
-- level 1 item
-
----
-
-### Nesting an ol in ul in an ol
-
-- level 1 item (ul)
-  1. level 2 item (ol)
-  1. level 2 item (ol)
-    - level 3 item (ul)
-    - level 3 item (ul)
-- level 1 item (ul)
-  1. level 2 item (ol)
-  1. level 2 item (ol)
-    - level 3 item (ul)
-    - level 3 item (ul)
-  1. level 4 item (ol)
-  1. level 4 item (ol)
-    - level 3 item (ul)
-    - level 3 item (ul)
-- level 1 item (ul)
-
----
-layout: true
-
-## Plots
-
----
-
-```{r plot-example, eval=requireNamespace("ggplot2", quietly=TRUE)}
-library(ggplot2)
-(g <- ggplot(mpg) + aes(hwy, cty, color = class) + geom_point())
-```
-
----
-
-```{r plot-example-themed, eval=requireNamespace("showtext", quietly=TRUE) && requireNamespace("ggplot2", quietly=TRUE)}
-g + xaringanthemer::theme_xaringan(text_font_size = 16, title_font_size = 18) +
-  ggtitle("A Plot About Cars")
-```
-
-.footnote[Requires `{showtext}`]
-
----
-layout: false
-
-## Square image
-
-<center><img src="https://octodex.github.com/images/labtocat.png" alt="GithHub Octocat" height="400px" /></center>
-
-.footnote[GitHub Octocat]
-
----
-
-### Wide image
-
-![A wide image with a diagram of branching in git.](https://docs.github.com/assets/images/help/repository/branching.png)
-
-.footnote[Wide images scale to 100% slide width]
-
----
-
-## Two images
-
-.pull-left[
-![A GitHub Octocat, style "mother hubber"](https://octodex.github.com/images/motherhubbertocat.png)
-]
-
-.pull-right[
-![A GitHub Octocat, style "dinotcat"](https://octodex.github.com/images/dinotocat.png)
-]
-
----
-
-### Definition lists can be used with HTML syntax.
-
-<dl>
-<dt>Name</dt>
-<dd>Godzilla</dd>
-<dt>Born</dt>
-<dd>1952</dd>
-<dt>Birthplace</dt>
-<dd>Japan</dd>
-<dt>Color</dt>
-<dd>Green</dd>
-</dl>
-
----
-class: center, middle
-
-# Thanks!
-
-Slides created via the R packages:
-
-[**xaringan**](https://github.com/yihui/xaringan)<br>
-[gadenbuie/xaringanthemer](https://github.com/gadenbuie/xaringanthemer)
-
-The chakra comes from [remark.js](https://remarkjs.com), [**knitr**](http://yihui.name/knitr), and [R Markdown](https://rmarkdown.rstudio.com).
