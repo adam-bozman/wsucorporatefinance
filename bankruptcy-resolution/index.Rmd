@@ -136,7 +136,7 @@ Financial institutions are excluded because they are not subject to the standard
   
 - The final sample contains 37 firms with substantially shorter bankruptcy petition to resolution timing (2.5 years on average) relative to prior studies (12.5 years, Warner - 1977) 
 
-- These firms' ratio of debt to total assets is also 77%, 50% higher than the 51% listed on Compustat for all nonbankrupt firms
+- These firms' ratio of debt to total assets is also 77%, 50% higher than the 51% listed on Compustat for all non-bankrupt firms
 
 ---
 
@@ -268,6 +268,14 @@ The values in any plan are confirmed by an "impartial judge," but have limitatio
 .panelset[
 .panel[.panel-name[Leniency]
 
+_Discussions with lawyers by Weiss indicated that two factors, firm size and locations of bankruptcy, are important in predicting whether priority of claims will be violated._
+
+- Larger, more complicated bankruptcies present more opportunities for equity holders and small groups of unsecured creditors to gain concessions from other creditors.
+
+> "A February 6, 1989 _Miami Review_ article describes how the Southern Disctrict of Florida's chief bankruptcy judge is much tougher on debtors than judges in some other districts."
+
+- Corporations with assets and operations in several jurisdictions have some latitude in deciding where to file.
+
 ]
 .panel[.panel-name[Total Assets]
 .pull-left[
@@ -279,7 +287,11 @@ The values in any plan are confirmed by an "impartial judge," but have limitatio
 
 .pull-right[
 
-This is right
+- Strict priority is violated for all 20 firms having total assets over $100 million
+
+- For firms with less than $100 million in assets, strict priority holds in eight of 17 cases, only one of which was in New York
+
+- There appears to be a strong link betweekn firm size and priority of claims
 
 ]
 ]
@@ -293,7 +305,9 @@ This is right
 ]
 .pull-right[
 
-This is right
+- "Lawyers in both Florida and Illinois assert that judges and lawyers in their jurisdictions are more willing to freeze out equity holders than are judges and lawyers in New York." 
+- Lawyers in New York say there is less fighting among parties in New York because of the greater sophistication of the creditors and a willingness by creditors to compromise priority to settle the case quickly
+- All cases in the Southern District of New York were handled by just five judges, of whom the Honorable Burtan R. Lifland handled over 33% of the cases
 
 ]
 ]
@@ -326,19 +340,18 @@ _Bankruptcy should resolve this human error by (1) preserving the value of the f
 
 ### Direct Costs
 
-*   Item foo
-*   Item bar
-*   Item baz
-*   Item zip
+_ If either the direct costs of resolving a bankruptcy are high or creditors cannot be confident that priority of claims will be honored, creditors will require somewhat higher interest rates._
+
+On average, direct costs of bankruptcy are 3.1% of the book value of debt plus the market value of equity.
+
 ]
 
 .pull-right[
 
 ### Priority of Claims
 
-1.  Item one
-1.  Item two
-1.  Item three
-1.  Item four
+- Priority of Claims is violated in 29 of 37 cases examined
+- Unsecured creditors are frequently denied priority over both equity holders and lower-ranked unsecured creditors
+- Secured creditors receive their full claim in all but 3 of the 37 cases
 ]
 
