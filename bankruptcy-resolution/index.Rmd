@@ -53,7 +53,7 @@ xaringanExtra::use_scribble()
 
 ## A Chrysler Case Study
 
-> _"Chapter 11 is well-suited to reorganizing a firm's firm's financial side, with the court and the parties sorting out priorities and then bargaining to a settlement.  That's what the 1978 Bankruptcy Code sought to accomplish in a financial world that seemed a simpler one, where all bankruptcy had to do was sort out the financial claims of stockholders and secured and unsecured creditors."_
+> _"Chapter 11 is well-suited to reorganizing a firm's financial side, with the court and the parties sorting out priorities and then bargaining to a settlement.  That's what the 1978 Bankruptcy Code sought to accomplish in a financial world that seemed a simpler one, where all bankruptcy had to do was sort out the financial claims of stockholders and secured and unsecured creditors."_
 
 .pull-right[
 
