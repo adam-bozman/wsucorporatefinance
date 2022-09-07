@@ -8,7 +8,7 @@ output:
   xaringan::moon_reader:
     includes:
       after_body: insert-logo.html
-    css: xaringan-themer.css
+    css: [default, xaringan-themer.css, my-theme.css]
     nature:
       slideNumberFormat: "%current%"
       highlightStyle: github
@@ -51,6 +51,17 @@ xaringanExtra::use_panelset()
 xaringanExtra::use_scribble()
 ```
 
+## A Chrysler Case Study
+
+> _"Chapter 11 is well-suited to reorganizing a firm's firm's financial side, with the court and the parties sorting out priorities and then bargaining to a settlement.  That's what the 1978 Bankruptcy Code sought to accomplish in a financial world that seemed a simpler one, where all bankruptcy had to do was sort out the financial claims of stockholders and secured and unsecured creditors."_
+
+.pull-right[
+
+Mark J. Roe and David Skeel in [Assessing the Chrysler Bankruptcy](https://pcg.law.harvard.edu/wp-content/uploads/papers/2009fall-Speakers_09-29_Roe.pdf)
+
+]
+
+---
 
 # Agenda
 
