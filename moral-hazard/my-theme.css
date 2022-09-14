@@ -1,0 +1,22 @@
+.title-slide {
+  background-image: url(img/university.png);
+  background-size: cover;
+}
+
+.title-slide h1 {
+  color: #F7F8FA;
+}
+.title-slide h2, .title-slide h3 {
+  color: #e7e8e2; 
+  line-height: 1.5em;
+}
+
+.title-slide .remark-slide-number {
+  display: none;
+}
+
+.title-slide h1 {
+  text-shadow: none;
+  color: #F7F8FA;
+  margin-top: -180px;
+}

@@ -3,12 +3,12 @@ title: "Political Capital and Moral Hazard"
 subtitle: "FIN 596 | Corporate Finance"  
 author: 
   - "Leonard Kostovetsky"
-date: '`r Sys.Date()`'
+date: 'JFE | 2015'
 output:
   xaringan::moon_reader:
     includes:
       after_body: insert-logo.html
-    css: xaringan-themer.css
+    css: [default, xaringan-themer.css, my-theme.css]
     nature:
       slideNumberFormat: "%current%"
       highlightStyle: github
@@ -54,23 +54,32 @@ xaringanExtra::use_scribble()
 # Agenda
 
 
-- **Motivation**
+### **Motivation**
 
-- **Data**
+### **Data & Senate Banking Committee**
 
-- **Senate Banking Committee**
+### **'08 Financial Crisis**
 
-- **'08 Financial Crisis**
+### **Primary Results**
 
-- **Moral Hazard**
-
-- **Conclusion**
+### **Conclusion**
 
 ---
 
 # Motivation
 
 .panelset[
+
+.panel[.panel-name[Key Questions]
+
+.center[
+
+### **Do political connections affect risk-taking behavior?**
+
+### **Did they play a role in risk taking by financial institutions that preceded the 2008 financial crisis?**
+
+]
+]
 
 .panel[.panel-name[History of Moral Hazard]
 
@@ -96,7 +105,7 @@ Financial risk taking by politically connected firms only makes sense if managem
 ]
 
 ]
-.panel[.panel-name['08 Financial Crisis]
+.panel[.panel-name['08 Precursor]
 
 #### Pre-crisis
 _"Did they [political connections] play a role in risk taking by financial institutions that preceded the 2008 financial crisis?"_
@@ -105,7 +114,6 @@ _"Did they [political connections] play a role in risk taking by financial insti
 - Savings and Loan (S&L, '80s & '90s)
 - Long-Term Capital Management (LTCM, 1998)
 
--- 
 #### Post-crisis
 - To rescue or not to rescue (Bear Sterns, Lehman Brothers, and AIG)? 
 - Finds firms with higher __precrisis__ leverage were more likely to go bankrupt and had lower stock returns
@@ -136,7 +144,7 @@ _"Did they [political connections] play a role in risk taking by financial insti
 
 class: inverse center middle, hide-logo
 
-# Data
+# Data & Senate Banking Committee
 
 ---
 
@@ -169,12 +177,6 @@ name: sumstats
 class: center, hide-logo
 background-image: url("img/summary-stats.png")
 background-size: contain
-
-
----
-class: inverse center middle, hide-logo
-
-# Senate Banking Committee
 
 ---
 
@@ -215,6 +217,18 @@ class: inverse center middle, hide-logo
 
 .panel[.panel-name[Datetime]
 
+> "I next focus in on financial firm decisions during the US housing bubble and the ensuing financial crisis (from 2003 through 2008)
+
+#### Two difficulties in assessing risk-taking behavior:
+
+1. Opportunities for financial institutions to engage in risky behavior don't always exist even in the presence of moral hazard
+1. Tail risk can be difficult to measure because, by definition, it adversely affects the firm only during a very rare event
+
+#### The mid-2000s in the US:
+
+1. The opportunity for making loans due to the housing boom created more cross-sectional variation in risk taking
+1. The resulting bust was one of those rare events in which the consequences of tail risk and the associated government intervention can be seen
+
 ]
 .panel[.panel-name[Leverage]
 #### Leverage is used to define the risk exposure of firms before and after the crisis.
@@ -225,6 +239,18 @@ class: inverse center middle, hide-logo
 - Leverage may omit other forms of firms' exposure to risk, daily stock volatility is also calculated (standard deviation of daily returns across a calendar year) as an additional measure
 ]
 .panel[.panel-name[Methodology]
+
+_Initial summary statistics suggest that **the Committee Senator dummy variable is not picking up some important differences in firm characteristics** that can explain the subsequent results._
+
+#### Table 5
+
+- First, **run probit regression** of the _Committee Senator_ dummy variable on firm characteristics at the start of the housing bubble
+  - Columns 1 and 2 show that none of the firm characteristics predicted the presence of a committee senator
+- For comparison, run OLS regressions of two other measures of political connections - **lobbying spending and political directors** - on firm characteristics at the same time
+  - Columns 3 through 6 reveal that many firm characteristics predicted lobbying spending or political directors (or both)
+  
+_Table 5 will show the advantage of using a more exogenous measure like Committee Senator as opposed to firm choice variables like lobbying spending and political directors... **the former is not a function of firm characteristics, and thus stems from political connections themselves and not due to some omitted variables.**_
+
 ]
 .panel[.panel-name[Bailouts]
 
@@ -249,15 +275,35 @@ Following TARP, Dodd-Frank (2010) was enacted sweeping reforms - a direct respon
 
 ---
 
+class: center, hide-logo
+background-image: url("img/tab5.png")
+background-size: contain
+
+---
 
 class: inverse center middle, hide-logo
 
 layout: false
 
-# Moral Hazard
+# Primary Results
 
 ---
 
+## Primary Results
+
+In the sample from 1973 - 2009, the author finds a **positive relationship between political connections and risk taking**, as measured by both stock volatility and leverage ratios
+
+In a more narrow sample, the author finds that politically connected firms had higher leverage prior to the 2008 financials crisis **and increased their leverage more in response to local housing price growth** (HUD)
+
+- **But** they were also less likely to go bankrupt or insolvent during and after the financial crisis and had higher stock returns during the crisis
+
+#### Robustness
+
+Dropping New York City (potentially endogenously higher probabliity of New York representation on the Senate Banking Committee could exist) from all tests yields no significant change to the main results.  
+
+Dropping Fannie Mae and Freddie Mac (under implicit guarantee so their behavior could dictate findings) does not change the main results 
+
+---
 
 class: inverse center middle, hide-logo
 
@@ -267,260 +313,16 @@ layout: false
 
 ---
 
+## Conclusion
 
-name: colors
+_"The critical component of the economic mechanism of moral hazard is the rational belief or expectation by market participants of outside intervention in adverse states of the world."_
 
-## Colors
 
-.left-column[
-Text color
+Moral hazard has been a staple of economic theory since the 1960s, **but economists know little about how firm incentives are affected by potential future government intervention.**
+  - This persists, but much more granular data does give promise to future studies of moral hazard
+  
+There have been a number of new campaign finance laws and court rulings in the last decade _(Citizens United v. Federal Election Commission)_
 
-[Link Color](#3)
+- How doe these impact corporate campaign expenditures?
 
-**Bold Color**
-
-_Italic Color_
-
-`Inline Code`
-]
-
-.right-column[
-Lorem ipsum dolor sit amet, [consectetur adipiscing elit (link)](#3), 
-sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-Erat nam at lectus urna.
-Pellentesque elit ullamcorper **dignissim cras tincidunt (bold)** lobortis feugiat. 
-_Eros donec ac odio tempor_ orci dapibus ultrices. 
-Id porta nibh venenatis cras sed felis eget velit aliquet.
-Aliquam id diam maecenas ultricies mi.
-Enim sit amet 
-`code_color("inline")`
-venenatis urna cursus eget nunc scelerisque viverra.
-]
-
----
-
-# Left-Column Headings
-
-.left-column[
-## First
-
-## Second
-
-## Third
-]
-
-.right-column[
-Dolor quis aptent mus a dictum ultricies egestas.
-
-Amet egestas neque tempor fermentum proin massa!
-
-Dolor elementum fermentum pharetra lectus arcu pulvinar.
-]
-
----
-layout: true
-
-## Blocks
-
----
-
-### Blockquote
-
-> This is a blockquote following a header.
->
-> When something is important enough, you do it even if the odds are not in your favor.
-
----
-
-### Code Blocks
-
-#### R Code
-
-```{r eval=FALSE}
-ggplot(gapminder) +
-  aes(x = gdpPercap, y = lifeExp, size = pop, color = country) +
-  geom_point() +
-  facet_wrap(~year)
-```
-
-#### JavaScript
-
-```js
-var fun = function lang(l) {
-  dateformat.i18n = require('./lang/' + l)
-  return true;
-}
-```
-
----
-
-### More R Code
-
-```{r eval=FALSE}
-dplyr::starwars %>% dplyr::slice_sample(n = 4)
-```
-
----
-
-```{r message=TRUE, eval=requireNamespace("cli", quietly = TRUE)}
-cli::cli_alert_success("It worked!")
-```
-
---
-
-```{r message=TRUE}
-message("Just a friendly message")
-```
-
---
-
-```{r warning=TRUE}
-warning("This could be bad...")
-```
-
---
-
-```{r error=TRUE}
-stop("I hope you're sitting down for this")
-```
-
-
----
-layout: true
-
-## Tables
-
----
-exclude: `r if (requireNamespace("tibble", quietly=TRUE)) "false" else "true"`
-
-```{r eval=requireNamespace("tibble", quietly=TRUE)}
-tibble::as_tibble(mtcars)
-```
-
----
-
-```{r}
-knitr::kable(head(mtcars), format = 'html')
-```
-
----
-exclude: `r if (requireNamespace("DT", quietly=TRUE)) "false" else "true"`
-
-```{r eval=requireNamespace("DT", quietly=TRUE)}
-DT::datatable(head(mtcars), fillContainer = FALSE, options = list(pageLength = 4))
-```
-
----
-layout: true
-
-## Lists
-
----
-
-.pull-left[
-#### Here is an unordered list:
-
-*   Item foo
-*   Item bar
-*   Item baz
-*   Item zip
-]
-
-.pull-right[
-
-#### And an ordered list:
-
-1.  Item one
-1.  Item two
-1.  Item three
-1.  Item four
-]
-
----
-
-### And a nested list:
-
-- level 1 item
-  - level 2 item
-  - level 2 item
-    - level 3 item
-    - level 3 item
-- level 1 item
-  - level 2 item
-  - level 2 item
-  - level 2 item
-- level 1 item
-  - level 2 item
-  - level 2 item
-- level 1 item
-
----
-
-### Nesting an ol in ul in an ol
-
-- level 1 item (ul)
-  1. level 2 item (ol)
-  1. level 2 item (ol)
-    - level 3 item (ul)
-    - level 3 item (ul)
-- level 1 item (ul)
-  1. level 2 item (ol)
-  1. level 2 item (ol)
-    - level 3 item (ul)
-    - level 3 item (ul)
-  1. level 4 item (ol)
-  1. level 4 item (ol)
-    - level 3 item (ul)
-    - level 3 item (ul)
-- level 1 item (ul)
-
----
-layout: true
-
-## Plots
-
----
-
-```{r plot-example, eval=requireNamespace("ggplot2", quietly=TRUE)}
-library(ggplot2)
-(g <- ggplot(mpg) + aes(hwy, cty, color = class) + geom_point())
-```
-
----
-
-```{r plot-example-themed, eval=requireNamespace("showtext", quietly=TRUE) && requireNamespace("ggplot2", quietly=TRUE)}
-g + xaringanthemer::theme_xaringan(text_font_size = 16, title_font_size = 18) +
-  ggtitle("A Plot About Cars")
-```
-
-.footnote[Requires `{showtext}`]
-
----
-
-### Definition lists can be used with HTML syntax.
-
-<dl>
-<dt>Name</dt>
-<dd>Godzilla</dd>
-<dt>Born</dt>
-<dd>1952</dd>
-<dt>Birthplace</dt>
-<dd>Japan</dd>
-<dt>Color</dt>
-<dd>Green</dd>
-</dl>
-
----
-class: center, middle
-
-# Thanks!
-
-Slides created via the R packages:
-
-[**xaringan**](https://github.com/yihui/xaringan)<br>
-[gadenbuie/xaringanthemer](https://github.com/gadenbuie/xaringanthemer)
-
-The chakra comes from [remark.js](https://remarkjs.com), [**knitr**](http://yihui.name/knitr), and [R Markdown](https://rmarkdown.rstudio.com).
-
-
-
+- How do these findings impact industries like defense (Senate Armed Services Committee) and health care (Senate Health, Education, Labor, and Pensions Committee)?
