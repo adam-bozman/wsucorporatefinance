@@ -12,15 +12,6 @@
     <link href="index_files/xaringanExtra-scribble/scribble.css" rel="stylesheet" />
     <script src="index_files/xaringanExtra-scribble/scribble.js"></script>
     <script>document.addEventListener('DOMContentLoaded', function() { window.xeScribble = new Scribble({"pen_color":["#FF0000"],"pen_size":3,"eraser_size":30,"palette":[]}) })</script>
-    <script src="index_files/htmlwidgets/htmlwidgets.js"></script>
-    <link href="index_files/datatables-css/datatables-crosstalk.css" rel="stylesheet" />
-    <script src="index_files/datatables-binding/datatables.js"></script>
-    <script src="index_files/jquery/jquery-3.6.0.min.js"></script>
-    <link href="index_files/dt-core/css/jquery.dataTables.min.css" rel="stylesheet" />
-    <link href="index_files/dt-core/css/jquery.dataTables.extra.css" rel="stylesheet" />
-    <script src="index_files/dt-core/js/jquery.dataTables.min.js"></script>
-    <link href="index_files/crosstalk/css/crosstalk.min.css" rel="stylesheet" />
-    <script src="index_files/crosstalk/js/crosstalk.min.js"></script>
     <link rel="stylesheet" href="xaringan-themer.css" type="text/css" />
     <link rel="stylesheet" href="my-theme.css" type="text/css" />
   </head>
@@ -51,451 +42,206 @@ class: center, middle, inverse, title-slide
 
 ## Agenda
 
-### **Author &amp; Motivation**
+### **Motivations**
 
-### **The Model**
+### **The Basic Idea**
 
-### **Belief Formation &amp; Market Behavior**
+### **Further Discussion**
 
-### **A Case Study of GameStop**
+### **Abstract Generalizations**
 
-### **Conclusions &amp; Further Directions**
-
----
-
-# Big Topic or Inverse Slides `#`
-
-## Slide Headings `##`
-
-### Sub-slide Headings `###`
-
-#### Bold Call-Out `####`
-
-This is a normal paragraph text. Only use header levels 1-4.
-
-##### Possible, but not recommended `#####`
-
-###### Definitely don't use h6 `######`
+### **Conclusions**
 
 ---
 
-# Left-Column Headings
+## Motivations
 
-.left-column[
-## First
+&gt; There is an important gap in modern finance theory on the issue of corporate debt policy. **This theory should be able to explain why the tax advantages of debt financing do not lead firms to borrow as much as possible - while defining "as much as possible."**
 
-## Second
+--
 
-## Third
+_"This paper presents a new approach which does not rely on any of the ideas mentioned above (e.g., credit rationing, M&amp;M, bankruptcy costs, etc.)."_
+
+.center[**Ultimately, Myers leads to a theory under which it is rational for firms to limit borrowing, even when interest is tax-deductible and capital markets are strictly perfect and complete.**]
+
+--
+
+&gt; The value of a firm (Myers) is accounted for by the present value of **options** to make further investments on possibly favorable terms - the value depends on exercising these options.  
+
+&gt;This paper shows that a firm with risky debt outstanding, and which acts in its stakeholders' interest, will follow a different decision rule than one which can issue risk-free debt or no debt at all.
+
+.center[**Thus, the optimal strategy involves a tradeoff between the tax advantages of debt and the costs of the suboptimal future investment strategy.**]
+
+---
+
+## The Basic Idea
+
+.panelset[
+.panel[.panel-name[Statement of the Problem]
+
+_There is a distinct difference in modern finance theory that considers ratios based on market values much more pertinent than book values.  **That being said, book values simply refer to assets already in place**._
+
+Assume no corporate taxes and no bankruptcy costs, let _V_ = current equilibrium market value of the firm
+
+.center[![:scale 70%](img/eq1.png)]
+
+- It is important to note that positive _V(G)_ is not jut excess return over the cost of capital - rather, it is "best regarded as the present value of the firm's _options_ to make future investments" 
+- This is the difference between assets whose **ultimate value depends on further, discretionary investment by the firm, and those assets whose ultimate value does not**
+
 ]
-
-.right-column[
-Dolor quis aptent mus a dictum ultricies egestas.
-
-Amet egestas neque tempor fermentum proin massa!
-
-Dolor elementum fermentum pharetra lectus arcu pulvinar.
-]
-
----
-class: inverse center middle
-
-# Topic Changing Interstitial
-
---
-
-```
-class: inverse center middle
-```
-
----
-layout: true
-
-## Blocks
-
----
-
-### Blockquote
-
-&gt; This is a blockquote following a header.
-&gt;
-&gt; When something is important enough, you do it even if the odds are not in your favor.
-
----
-
-### Code Blocks
-
-#### R Code
-
-
-```r
-ggplot(gapminder) +
-  aes(x = gdpPercap, y = lifeExp, size = pop, color = country) +
-  geom_point() +
-  facet_wrap(~year)
-```
-
-#### JavaScript
-
-```js
-var fun = function lang(l) {
-  dateformat.i18n = require('./lang/' + l)
-  return true;
-}
-```
-
----
-
-### More R Code
-
-
-```r
-dplyr::starwars %&gt;% dplyr::slice_sample(n = 4)
-```
-
----
-
-
-```r
-cli::cli_alert_success("It worked!")
-```
-
-```
-## ✔ It worked!
-```
-
---
-
-
-```r
-message("Just a friendly message")
-```
-
-```
-## Just a friendly message
-```
-
---
-
-
-```r
-warning("This could be bad...")
-```
-
-```
-## Warning: This could be bad...
-```
-
---
-
-
-```r
-stop("I hope you're sitting down for this")
-```
-
-```
-## Error in eval(expr, envir, enclos): I hope you're sitting down for this
-```
-
-
----
-layout: true
-
-## Tables
-
----
-exclude: false
-
-
-```r
-tibble::as_tibble(mtcars)
-```
-
-```
-## # A tibble: 32 × 11
-##      mpg   cyl  disp    hp  drat    wt  qsec    vs    am  gear  carb
-##    &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;
-##  1  21       6  160    110  3.9   2.62  16.5     0     1     4     4
-##  2  21       6  160    110  3.9   2.88  17.0     0     1     4     4
-##  3  22.8     4  108     93  3.85  2.32  18.6     1     1     4     1
-##  4  21.4     6  258    110  3.08  3.22  19.4     1     0     3     1
-##  5  18.7     8  360    175  3.15  3.44  17.0     0     0     3     2
-##  6  18.1     6  225    105  2.76  3.46  20.2     1     0     3     1
-##  7  14.3     8  360    245  3.21  3.57  15.8     0     0     3     4
-##  8  24.4     4  147.    62  3.69  3.19  20       1     0     4     2
-##  9  22.8     4  141.    95  3.92  3.15  22.9     1     0     4     2
-## 10  19.2     6  168.   123  3.92  3.44  18.3     1     0     4     4
-## # … with 22 more rows
-## # ℹ Use `print(n = ...)` to see more rows
-```
-
----
-
-
-```r
-knitr::kable(head(mtcars), format = 'html')
-```
-
-&lt;table&gt;
- &lt;thead&gt;
-  &lt;tr&gt;
-   &lt;th style="text-align:left;"&gt;   &lt;/th&gt;
-   &lt;th style="text-align:right;"&gt; mpg &lt;/th&gt;
-   &lt;th style="text-align:right;"&gt; cyl &lt;/th&gt;
-   &lt;th style="text-align:right;"&gt; disp &lt;/th&gt;
-   &lt;th style="text-align:right;"&gt; hp &lt;/th&gt;
-   &lt;th style="text-align:right;"&gt; drat &lt;/th&gt;
-   &lt;th style="text-align:right;"&gt; wt &lt;/th&gt;
-   &lt;th style="text-align:right;"&gt; qsec &lt;/th&gt;
-   &lt;th style="text-align:right;"&gt; vs &lt;/th&gt;
-   &lt;th style="text-align:right;"&gt; am &lt;/th&gt;
-   &lt;th style="text-align:right;"&gt; gear &lt;/th&gt;
-   &lt;th style="text-align:right;"&gt; carb &lt;/th&gt;
-  &lt;/tr&gt;
- &lt;/thead&gt;
-&lt;tbody&gt;
-  &lt;tr&gt;
-   &lt;td style="text-align:left;"&gt; Mazda RX4 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 21.0 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 6 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 160 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 110 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 3.90 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 2.620 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 16.46 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 0 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 1 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 4 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 4 &lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-   &lt;td style="text-align:left;"&gt; Mazda RX4 Wag &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 21.0 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 6 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 160 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 110 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 3.90 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 2.875 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 17.02 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 0 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 1 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 4 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 4 &lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-   &lt;td style="text-align:left;"&gt; Datsun 710 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 22.8 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 4 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 108 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 93 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 3.85 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 2.320 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 18.61 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 1 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 1 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 4 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 1 &lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-   &lt;td style="text-align:left;"&gt; Hornet 4 Drive &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 21.4 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 6 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 258 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 110 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 3.08 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 3.215 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 19.44 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 1 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 0 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 3 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 1 &lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-   &lt;td style="text-align:left;"&gt; Hornet Sportabout &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 18.7 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 8 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 360 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 175 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 3.15 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 3.440 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 17.02 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 0 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 0 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 3 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 2 &lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-   &lt;td style="text-align:left;"&gt; Valiant &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 18.1 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 6 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 225 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 105 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 2.76 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 3.460 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 20.22 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 1 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 0 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 3 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 1 &lt;/td&gt;
-  &lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-
----
-exclude: false
-
-
-```r
-DT::datatable(head(mtcars), fillContainer = FALSE, options = list(pageLength = 4))
-```
-
-<div id="htmlwidget-82e324c57044b454f4d7" style="width:100%;height:auto;" class="datatables html-widget"></div>
-<script type="application/json" data-for="htmlwidget-82e324c57044b454f4d7">{"x":{"filter":"none","vertical":false,"fillContainer":false,"data":[["Mazda RX4","Mazda RX4 Wag","Datsun 710","Hornet 4 Drive","Hornet Sportabout","Valiant"],[21,21,22.8,21.4,18.7,18.1],[6,6,4,6,8,6],[160,160,108,258,360,225],[110,110,93,110,175,105],[3.9,3.9,3.85,3.08,3.15,2.76],[2.62,2.875,2.32,3.215,3.44,3.46],[16.46,17.02,18.61,19.44,17.02,20.22],[0,0,1,1,0,1],[1,1,1,0,0,0],[4,4,4,3,3,3],[4,4,1,1,2,1]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>mpg<\/th>\n      <th>cyl<\/th>\n      <th>disp<\/th>\n      <th>hp<\/th>\n      <th>drat<\/th>\n      <th>wt<\/th>\n      <th>qsec<\/th>\n      <th>vs<\/th>\n      <th>am<\/th>\n      <th>gear<\/th>\n      <th>carb<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"pageLength":4,"columnDefs":[{"className":"dt-right","targets":[1,2,3,4,5,6,7,8,9,10,11]},{"orderable":false,"targets":0}],"order":[],"autoWidth":false,"orderClasses":false,"lengthMenu":[4,10,25,50,100]}},"evals":[],"jsHooks":[]}</script>
-
----
-layout: true
-
-## Lists
-
----
+.panel[.panel-name[Figures 1 &amp; 2]
 
 .pull-left[
-#### Here is an unordered list:
 
-*   Item foo
-*   Item bar
-*   Item baz
-*   Item zip
+![](img/fig1.png)
+
 ]
-
 .pull-right[
 
-#### And an ordered list:
+![](img/fig2.png)
 
-1.  Item one
-1.  Item two
-1.  Item three
-1.  Item four
+]
+]
+
+.panel[.panel-name[Borrowing and Market Value]
+
+&gt; Since the firm will be worth nothing in states s &lt; s(a), it can issue no safe debt.  **However, it can issue risky debt with the promised payment _P_.**
+
+The equilibrium market value, 
+
+.center[![:scale 60%](img/eq4.png)]
+
+- Then if V(s) - I &gt;= P, the stockholders' interest is to pay the debtors off
+
+- If V(s) - I &lt; P, however, the bondholders will take over, _and will exercise the firm's option to invest if V(s) &gt;= I
+
+]
+
+.panel[.panel-name[Figure 3]
+.pull-left[
+![:scale 100%](img/fig3.png)
+]
+.pull-right[
+
+**The first rationale for credit rationing that does not depend on market imperfections:**
+
+- V(D) &lt; V, except in the limit where P approaches infinity
+
+![](img/eq6.png)
+- The creditors will receive nothing at all if s &lt; s(b) 
+
+- Here, V is a monotonically decreasing function of P, and it is maximized when P and V(D) equal zero
+
+]
+]
+
+.panel[.panel-name[Taxes]
+
+&gt; There must be some other factor to explain why firms issue risky debt.  The obvious candidate? - corporate income tax.
+
+_Suppose the firm can deduct the full amount of P - V(D) in all states, and the tax rate is T, the value of the firm is:_
+
+.center[![:scale 80%](img/eq9.png)]
+
+- Equation 9 utilizes a minimization with respect to interest rate _R_ to avoid any arbitrarily large V following an equally large P
+
+]
+
+.panel[.panel-name[Figure 4]
+
+.center[![:scale 70%](img/fig4.png)]
+
+]
 ]
 
 ---
 
-### And a nested list:
+## Further Discussion
 
-- level 1 item
-  - level 2 item
-  - level 2 item
-    - level 3 item
-    - level 3 item
-- level 1 item
-  - level 2 item
-  - level 2 item
-  - level 2 item
-- level 1 item
-  - level 2 item
-  - level 2 item
-- level 1 item
+.panelset[
+.panel[.panel-name[Assets as Call Options]
 
----
+&gt; What are the essential characteristics of the "growth opportunity" already mentioned?  **They flow from the fact that it can be regarded as a call option on a real asset.**
 
-### Nesting an ol in ul in an ol
+- The option's exercise price is the future investment needed to acquire the asset
+- Whether the option has any value when it expires depends on the asset's future value
+- It also depends on whether the firm chooses to exercise 
 
-- level 1 item (ul)
-  1. level 2 item (ol)
-  1. level 2 item (ol)
-    - level 3 item (ul)
-    - level 3 item (ul)
-- level 1 item (ul)
-  1. level 2 item (ol)
-  1. level 2 item (ol)
-    - level 3 item (ul)
-    - level 3 item (ul)
-  1. level 4 item (ol)
-  1. level 4 item (ol)
-    - level 3 item (ul)
-    - level 3 item (ul)
-- level 1 item (ul)
+This decision to exercise is not trivial or automatic, as it is for options written on securities, **since it depends on the magnitude of promised payments to bondholders**
 
----
-layout: true
-
-## Plots
-
----
-
-
-```r
-library(ggplot2)
-(g &lt;- ggplot(mpg) + aes(hwy, cty, color = class) + geom_point())
-```
-
-&lt;img src="index_files/figure-html/plot-example-1.png" width="100%" /&gt;
-
----
-
-
-```r
-g + xaringanthemer::theme_xaringan(text_font_size = 16, title_font_size = 18) +
-  ggtitle("A Plot About Cars")
-```
-
-.footnote[Requires `{showtext}`]
-
----
-layout: false
-
-## Square image
-
-&lt;center&gt;&lt;img src="https://octodex.github.com/images/labtocat.png" alt="GithHub Octocat" height="400px" /&gt;&lt;/center&gt;
-
-.footnote[GitHub Octocat]
-
----
-
-### Wide image
-
-![A wide image with a diagram of branching in git.](https://docs.github.com/assets/images/help/repository/branching.png)
-
-.footnote[Wide images scale to 100% slide width]
-
----
-
-## Two images
+_The most fundamental distinction is not between 'growth opportunities' and 'assets in place,' but:_ 
 
 .pull-left[
-![A GitHub Octocat, style "mother hubber"](https://octodex.github.com/images/motherhubbertocat.png)
+(1) Assets that can be regarded as call options, in the sense that their ultimate values depend on further discretionary investment by the firm.
 ]
-
 .pull-right[
-![A GitHub Octocat, style "dinotcat"](https://octodex.github.com/images/dinotocat.png)
+(2) Assets whose ultimate value does not depend on further discretionary investment.
+]
 ]
 
+.panel[.panel-name[The Debt Contract]
+
+#### A Potential Solution
+
+&gt; Why not eliminate this problem (firm actions in various circumstances) by adding a clause to the debt contract?  The contract would be rewritten to require the firm to take on each investment project in all states where its net present value is positive.
+
+#### This is Practically Impossible
+
+1. **Such a contract is not enforceable when it counts**, since limited liability protect shareholders from mandatory future assessments
+1. Even if such a contract is laboriously constructed, **there will rarely be any objective basis for judging whether it is breached**
+
+]
+
+.panel[.panel-name[Restrictions on Dividends]
+
+&gt; Restricting dividend payments can protect against the suboptimal investment decisions induced by risky debt.
+
+_"I regard this as a strong rationale for restrictive covenants on dividends, and a partial solution to the warped investment incentives created by risky debt. The reasons it is only a partial solution include the following:"_
+
+1. **There are still monitoring costs**, since there are so many possible channels for transferring capital to the firm's owners.
+
+1. **The investment incentives are still not exactly right.**  Shareholders' viewpoint is not the one which maximizes the market value of the firm.
+
+1. The dividend restriction may force the firm to **invest in assets with negative net present values.**
+
+1. A dividend constraint is helpful **only when cash is actually available for payout**, otherwise it is irrelevant.  
+
+]
+
+]
 ---
 
-### Definition lists can be used with HTML syntax.
+## Abstract Generalizations
 
-&lt;dl&gt;
-&lt;dt&gt;Name&lt;/dt&gt;
-&lt;dd&gt;Godzilla&lt;/dd&gt;
-&lt;dt&gt;Born&lt;/dt&gt;
-&lt;dd&gt;1952&lt;/dd&gt;
-&lt;dt&gt;Birthplace&lt;/dt&gt;
-&lt;dd&gt;Japan&lt;/dd&gt;
-&lt;dt&gt;Color&lt;/dt&gt;
-&lt;dd&gt;Green&lt;/dd&gt;
-&lt;/dl&gt;
+&gt; Because the value of the firm depends on its future investment strategy, it is useful to think of the firm as composed of two distinct asset types: (1) _real assets_, and (2) _real options_.
 
+.pull-left[
+
+![:scale 85%](img/fig5.png)
+
+]
+.pull-right[
+
+**At any point in time the value of oustanding bonds is related to the value of the firm and on the uncertainty about the firm's future value.**
+
+![](img/eq12.png)
+
+- In other words, there is a transfer of value from stockholders to bondholders, called _Z_
+- Equation (12) assumes a continuous investment schedule rather than discrete projects.  The discrete case is shown in Figure 5 **where the shaded area indicates the loss of net present value**
+
+]
 ---
-class: center, middle
 
-# Thanks!
+## Conclusions
 
-Slides created via the R packages:
+.center[![:scale 70%](img/conclusion.png)]
 
-[**xaringan**](https://github.com/yihui/xaringan)&lt;br&gt;
-[gadenbuie/xaringanthemer](https://github.com/gadenbuie/xaringanthemer)
+1. **Assets-in-place should be financed with more debt than growth opportunities.**  The investment in assets-in-place is a sunk cost and, by definition, not discretionary.
+1. **For assets in place, the following should be associated with heavy debt financing:** (a) capital-intensity and _high_ operating costs, (b) profitability, ideally measured by future value.
 
-The chakra comes from [remark.js](https://remarkjs.com), [**knitr**](http://yihui.name/knitr), and [R Markdown](https://rmarkdown.rstudio.com).
+_Suppose that real options are riskier than assets just as stock options are almost always riskier than the stocks they are written on:_ 
+1. Neo-classical valuation models **(M&amp;M) are mis-specified.**
+1. One cannot measure the equilibrium capitalization rate for a firm's stock and then use it as a hurdle rate for capital budgeting **(this will overestimate growth opportunities).**
     </textarea>
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
