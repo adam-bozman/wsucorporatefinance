@@ -125,7 +125,7 @@ The equilibrium market value,
 
 - Then if V(s) - I >= P, the stockholders' interest is to pay the debtors off
 
-- If V(s) - I < P, however, the bondholders will take over, _and will exercise the firm's option to invest if V(s) >= I
+- If V(s) - I < P, however, the bondholders will take over, _and will exercise the firm's option to invest if V(s) >= I_
 
 ]
 
@@ -142,7 +142,7 @@ The equilibrium market value,
 ![](img/eq6.png)
 - The creditors will receive nothing at all if s < s(b) 
 
-- Here, V is a monotonically decreasing function of P, and it is maximized when P and V(D) equal zero
+- Here, **V is a monotonically decreasing function of P**, and it is maximized when P and V(D) equal zero
 
 ]
 ]
@@ -249,7 +249,9 @@ _"I regard this as a strong rationale for restrictive covenants on dividends, an
 .center[![:scale 70%](img/conclusion.png)]
 
 1. **Assets-in-place should be financed with more debt than growth opportunities.**  The investment in assets-in-place is a sunk cost and, by definition, not discretionary.
-1. **For assets in place, the following should be associated with heavy debt financing:** (a) capital-intensity and _high_ operating costs, (b) profitability, ideally measured by future value.
+1. **For assets-in-place, the following should be associated with heavy debt financing:** (a) capital-intensity and _high_ operating costs, (b) profitability, ideally measured by future value.
+
+--
 
 _Suppose that real options are riskier than assets just as stock options are almost always riskier than the stocks they are written on:_ 
 1. Neo-classical valuation models **(M&M) are mis-specified.**
