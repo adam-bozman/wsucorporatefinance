@@ -1,0 +1,190 @@
+---
+title: "Secured Lending and Default Risk:"
+subtitle: "Equilibrium Analysis, Policy Implications, and Emperical Results"  
+author: 
+  - "Arnoud Boot, Anjan Thakor, and Gregory Udell"
+date: "EJ | May, 1991"
+output:
+  xaringan::moon_reader:
+    includes:
+      after_body: insert-logo.html
+    css: [default, xaringan-themer.css, my-theme.css]
+    nature:
+      slideNumberFormat: "%current%"
+      highlightStyle: github
+      highlightLines: true
+      ratio: 16:9
+      countIncrementalSlides: true
+      beforeInit: "macros.js"
+---
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+knitr::opts_chunk$set(
+  fig.width=9, fig.height=3.5, fig.retina=3,
+  out.width = "100%",
+  cache = FALSE,
+  echo = TRUE,
+  message = FALSE, 
+  warning = FALSE,
+  hiline = TRUE
+)
+```
+
+```{r xaringan-themer, include=FALSE, warning=FALSE}
+library(xaringanthemer)
+style_duo_accent(
+  primary_color = "#A60F2D",
+  secondary_color = "#4D4D4D",
+  inverse_header_color = "#FFFFFF",
+  # fonts
+  header_font_google = google_font("Martel"),
+  text_font_google = google_font("Lato"),
+  code_font_google = google_font("Fira Mono")
+)
+```
+
+```{r xaringan-panelset, echo=FALSE}
+xaringanExtra::use_panelset()
+```
+
+```{r xaringan-scribble, echo=FALSE}
+xaringanExtra::use_scribble()
+```
+
+## Agenda
+
+### **Motivation & Objectives**
+
+### **The Model**
+
+### **Considering Moral Hazard**
+
+### **Policy Implications**
+
+### **Conclusion**
+
+---
+
+class: inverse center middle, hide-logo
+
+layout: false
+
+# Motivation & Objectives
+
+---
+
+## Motivation
+
+> "Debt contracts often require borrowers to pledge collateral.  Merris (1979) reports that a Federal Reserve survey involving 340 banks found that approximately 40% of all short-term, and 60% of all commercial loans were _secured_ between 1977 and 1979.  **Despite this, the research on collateral is limited.**"
+
+### **3 Main Questions**
+
+1. Under what conditions is there a positive association between borrower risk and collateral, as documented empirically by Orgler (1970)?
+
+1. What is the economic role of collateral under private information and moral hazard?
+
+1. How does monetary policy affect the cross-sectional dispersion of unsecured and secured lending?
+
+---
+
+## Objectives
+
+> "We develop a model in which banks compete for borrowers and deposits are elastically supplied."
+
+
+
+---
+
+class: inverse center middle, hide-logo
+
+layout: false
+
+# The Model
+
+---
+
+layout: true
+
+## The Model
+
+---
+
+### Setup 
+
+> "We assume universal risk neutrality and view banks as competing for both loans and deposits in a perfectly competitive credit market.  **Deposits are elastically supplied at the riskless rate.**"
+
+#### Ergo,
+1. Depositors receive an expected return equal to the riskless rate
+1. Borrowers expected utilities are maximized subject to informational and breakeven constraints
+1. banks earn zero expected profits
+
+_In this economy, there are two points in time, **t = 0 and t = 1**, the initial point and terminal point, respectively._  
+
+**The borrower may be defined within _A_, such that**
+
+.pull-left[
+![](img/pgood.png)
+]
+.pull-right[
+![](img/pbad.png)
+]
+
+---
+
+### Setup
+
+**Given the assumptions already made, we can understand that:**
+
+![](img/a1.png)
+
+Condition (A1) implies that the good borrower has a higher success probability than the bad borrower for any given action.  **This in turn implies that the _maximum_ possible improvement in the success probability for the good borrower is _smaller_ than that for the bad borrower.**  
+- This implications assumes that the marginal impact of action on a borrower's success probability is _decreasing_ in borrower quality:
+
+.pull-left[
+![](img/decreasing.png)
+]
+.pull-right[
+![](img/a2.png)
+]
+
+---
+
+### The First Best Solution
+
+> The first best equilibrium includes no moral hazard, and no private information. 
+
+![](img/maxa2.png)
+
+.pull-left[
+![](img/a3.png)
+]
+.pull-left[
+![](img/a4.png)
+]
+
+---
+
+class: inverse center middle, hide-logo
+
+layout: false
+
+# Considering Moral Hazard
+
+---
+
+class: inverse center middle, hide-logo
+
+layout: false
+
+# Policy Implications
+
+---
+
+class: inverse center middle, hide-logo
+
+layout: false
+
+# Conclusions
+
+
