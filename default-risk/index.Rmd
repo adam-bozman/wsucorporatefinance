@@ -154,7 +154,11 @@ Condition (A1) implies that the good borrower has a higher success probability t
 
 > The first best equilibrium includes no moral hazard, and no private information. 
 
+When both _a_ and _theta_ are observable to the lender, a borrow would solve below, where r is one plus the riskless interest rate.  The borrower chooses to maximize the value of its project net of the $1 investment for one period at _r_ :
+
 ![](img/maxa2.png)
+
+Below, **_a lower-bar_ is optimal for the good borrower if (A3) conditions are met.**  Conversely, **_a upper_bar_ is optimal for the bad borrower if (A4) conditions are met.**  These conditions are compatible with (A1) and (A2).
 
 .pull-left[
 ![](img/a3.png)
@@ -173,11 +177,65 @@ layout: false
 
 ---
 
+## Considering Moral Hazard
+
+.panelset[
+.panel[.panel-name[Second Best Equilibrium]
+
+]
+.panel[.panel-name[Proposition 1]
+
+]
+.panel[.panel-name[Proposition 2]
+
+![](img/prop2.png)
+
+]
+.panel[.panel-name[Proposition 3]
+
+Maybe ignore?
+
+]
+.panel[.panel-name[Third Best Equilibrium]
+
+]
+.panel[.panel-name[Proposition 4]
+
+![](img/prop4.png)
+
+]
+]
+
+---
+
+
 class: inverse center middle, hide-logo
 
 layout: false
 
 # Policy Implications
+
+---
+
+layout: true
+
+## Policy Implications
+
+---
+
+### Testable Predictions
+
+1. Despite deadweight costs associated with collateral, we should expect it to be widely used to cope with moral hazard and private information problems.
+1. An increase in the (real) riskless interest rate increases collateral levels in secured loans, in both the second and third best equilibria. 
+1. An increase in the (real) riskless rate increases interest on all loans, in both the second and third best equilibria.
+1. A reduction in the dissipative cost of collateral reduces the level of collateral used in the second best equilibrium.
+1. An increase in the loan size decreases the amount of collateral used in the second best equilibrium.
+
+
+
+---
+
+![](img/tab1.png)
 
 ---
 
@@ -187,4 +245,18 @@ layout: false
 
 # Conclusions
 
+---
 
+## Conclusions
+
+> "Because private information may either accentuate or retard the positive relationship between collateral requirements and borrower risk encountered with just moral hazard, higher collateral may be posted by either safer or riskier borrowers.  **Moreover, borrower risk is endogenous and an outcome of the equilibrium.**"
+
+- Higher interest rates in the economy lead to both higher equilibrium loan interest rates and higher equilibrium collateral requirements
+
+- A decline in the dissipative costs of collateral or an increase in the loan size lead to lower equilibrium collateral utilization
+
+- Over half of all loans in the authors sample period were secured, with a temporal increase in secured lending
+
+- Larger loans and loans of longer maturity also have less collateral
+
+.center[### **Thank You!**]
