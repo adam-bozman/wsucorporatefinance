@@ -111,7 +111,7 @@ layout: true
 #### Ergo,
 1. Depositors receive an expected return equal to the riskless rate
 1. Borrowers expected utilities are maximized subject to informational and breakeven constraints
-1. banks earn zero expected profits
+1. Banks earn zero expected profits
 
 _In this economy, there are two points in time, **t = 0 and t = 1**, the initial point and terminal point, respectively._  
 
@@ -148,7 +148,7 @@ Condition (A1) implies that the good borrower has a higher success probability t
 
 > The first best equilibrium includes no moral hazard, and no private information. 
 
-When both _a_ and _theta_ are observable to the lender, a borrow would solve below, where r is one plus the riskless interest rate.  The borrower chooses to maximize the value of its project net of the $1 investment for one period at _r_ :
+When both _a_ and _theta_ are observable to the lender, a borrower would solve below, where r is one plus the riskless interest rate.  The borrower chooses to maximize the value of its project net of the $1 investment for one period at _r_ :
 
 ![](img/maxa2.png)
 
@@ -176,7 +176,7 @@ layout: false
 .panelset[
 .panel[.panel-name[Second Best Equilibrium]
 
-> Suppose a borrower chose _a upper-bar_ in the first best case (the borrower is of the bad type).  Then moral hazard is present is such a borrower chooses _a lower-bar_ in the second best case when offered an unsecured (bank would make zero expected profit if borrower would have chosen _a upper-bar_).
+> Suppose a borrower chose _a upper-bar_ in the first best case (the borrower is of the bad type).  **Then moral hazard is present if such a borrower chooses _a lower-bar_ in the second best case when offered an unsecured loan **(bank would make zero expected profit if borrower would have chosen _a upper-bar_).
 
 .center[![](img/equil2.png)]
 
