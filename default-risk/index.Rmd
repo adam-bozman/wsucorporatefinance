@@ -133,7 +133,7 @@ _In this economy, there are two points in time, **t = 0 and t = 1**, the initial
 ![](img/a1.png)
 
 Condition (A1) implies that the good borrower has a higher success probability than the bad borrower for any given action.  **This in turn implies that the _maximum_ possible improvement in the success probability for the good borrower is _smaller_ than that for the bad borrower.**  
-- This implications assumes that the marginal impact of action on a borrower's success probability is _decreasing_ in borrower quality:
+- This implication assumes that the marginal impact of action on a borrower's success probability is _decreasing_ in borrower quality:
 
 .pull-left[
 ![](img/decreasing.png)
@@ -176,27 +176,63 @@ layout: false
 .panelset[
 .panel[.panel-name[Second Best Equilibrium]
 
+> Suppose a borrower chose _a upper-bar_ in the first best case (the borrower is of the bad type).  Then moral hazard is present is such a borrower chooses _a lower-bar_ in the second best case when offered an unsecured (bank would make zero expected profit if borrower would have chosen _a upper-bar_).
+
+.center[![](img/equil2.png)]
+
+**Alpha and C are stated functions of the borrower's observable type, thus:** 
+1. Each borrower's expected utility is maximized
+1. Subject to the bank at least breaking even
+1. The borrower choosing an incentive compatible action, a*
+
 ]
 .panel[.panel-name[Proposition 1]
+
+.pull-left[
+![](img/prop12.png)
+![](img/prop11.png)
+]
+.pull-right[
+
+- This proposition says that the bad borrower can be motivated to choose its first best action _a upper-bar_ **by offering it an appropriately designed secured loan**
+- The reason why collateral has this effect is that the borrower loses collateral only upon default, **and the probability of default can be reduced by choosing a higher action**
+- The good borrower gets an unsecured loan here since this is not efficient to motivate it to work harder, **_a lower-bar_ is its first best choice**
+
+]
 
 ]
 .panel[.panel-name[Proposition 2]
 
 .center[![:scale 80%](img/prop2.png)]
 
+> Proposition 2 just tells us that if equation (7) holds, then the bad borrower (granted a secured loan) is riskier than the good borrower (granted an unsecured loan) using both risk measures.
+
+**Orgler (1970) found empirically that bank examiners classified secured loans as riskier.**
+
 ]
 .panel[.panel-name[Proposition 3]
 
-Maybe ignore?
+1. As the bank's marginal cost of funds rises, it must demand higher loan interest factors from both borrowers in order to continue to break even.  **"An increase in the riskless rate increases the loan interest factor of the good borrower and... that of the bad borrower."**
+
+1. **"A reduction in the dissipative cost of collateral (Beta) reduces the collateral requirement for the bad borrower."**  A lowering of this cost implies that collateral is now worth more to the bank and less of it is needed to enable the bank to break even.
+
+1. **"An increase in R reduces the bad borrower's collateral requirement and increases its interest factor - the good borrower is unaffected."** The reason for this, for a _given_ interest factor, an increase in R increases the borrower's net marginal return to effort.  
 
 ]
 .panel[.panel-name[Third Best Equilibrium]
 
+.pull-left[
+![](img/equil3.png)
+![](img/a7.png)
 ]
-.panel[.panel-name[Proposition 4]
+.pull-right[
 
-![](img/prop4.png)
+- **The only difference between this and the Second Best Equilibrium is the addition of the (global) truth-telling constraint (11)**
+- The solution to (8)-(11) depends on the constellation of exogenous parameter values - the authors focus on parameter values for which moral hazard is not severe (A7)
+- Eta is a strictly positive scaler
+- From (A4) and (A5), it is implied that moral hazard is more severe for smaller values in the set.  **If eta is sufficiently large, moral hazard is moderate.**
 
+]
 ]
 ]
 
@@ -225,11 +261,13 @@ layout: true
 1. A reduction in the dissipative cost of collateral reduces the level of collateral used in the second best equilibrium.
 1. An increase in the loan size decreases the amount of collateral used in the second best equilibrium.
 
-
+> Emperical data (1,4, and 5) comes from the "Federal Reserve's Survey of Terms of Bank Lending".  
+**Over the sample period, 57.5% of the loans are secured (support of prediction 1).**
+Additionally, interest rates have risen over the sample period, generally in line with collateral use.  **Implied by prediction 4, less collateral should be encountered with longer maturity loans (higher Beta).**  From the regression, _LNSIZE_ has a significant and negative coefficient  - **as the size of the loan increases, the likelihood it will be secured goes down (prediction 5).**  Similarly, _LNDUR_ has a significant and negative coefficient - **consistent with prediction 4.**
 
 ---
 
-![](img/tab1.png)
+.center[![:scale 80%](img/tab1.png)]
 
 ---
 
@@ -253,4 +291,3 @@ layout: false
 
 - Larger loans and loans of longer maturity also have less collateral
 
-.center[### **Thank You!**]
