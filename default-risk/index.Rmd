@@ -186,7 +186,7 @@ layout: false
 1. The borrower choosing an incentive compatible action, a*
 
 ]
-.panel[.panel-name[Proposition 1]
+.panel[.panel-name[Prop 1]
 
 .pull-left[
 ![](img/prop12.png)
@@ -201,7 +201,7 @@ layout: false
 ]
 
 ]
-.panel[.panel-name[Proposition 2]
+.panel[.panel-name[Prop 2]
 
 .center[![:scale 80%](img/prop2.png)]
 
@@ -210,7 +210,7 @@ layout: false
 **Orgler (1970) found empirically that bank examiners classified secured loans as riskier.**
 
 ]
-.panel[.panel-name[Proposition 3]
+.panel[.panel-name[Prop 3]
 
 1. As the bank's marginal cost of funds rises, it must demand higher loan interest factors from both borrowers in order to continue to break even.  **"An increase in the riskless rate increases the loan interest factor of the good borrower and... that of the bad borrower."**
 
@@ -233,6 +233,15 @@ layout: false
 - From (A4) and (A5), it is implied that moral hazard is more severe for smaller values in the set.  **If eta is sufficiently large, moral hazard is moderate.**
 
 ]
+]
+.panel[.panel-name[Prop 4]
+
+.center[![](img/prop4.png)]
+
+- This case holds for a situation in which **moral hazard is moderate** (A7-1)
+- Between here and Proposition 1, only the specification of **the contract for the good borrower has changed**
+- The good borrower's contract now involves collateral because otherwise the bad borrower would covet this contract - **the presence of private information leads to a higher use of collateral in equilibrium contracts, and and introduction of collateral in all equilibrium contracts**
+
 ]
 ]
 
@@ -283,11 +292,11 @@ layout: false
 
 > "Because private information may either accentuate or retard the positive relationship between collateral requirements and borrower risk encountered with just moral hazard, higher collateral may be posted by either safer or riskier borrowers.  **Moreover, borrower risk is endogenous and an outcome of the equilibrium.**"
 
-- Higher interest rates in the economy lead to both higher equilibrium loan interest rates and higher equilibrium collateral requirements
+- Higher interest rates in the economy lead to **both higher equilibrium loan interest rates and higher equilibrium collateral requirements**
 
-- A decline in the dissipative costs of collateral or an increase in the loan size lead to lower equilibrium collateral utilization
+- A decline in the dissipative costs of collateral or an increase in the loan size lead to **lower equilibrium collateral utilization**
 
-- Over half of all loans in the authors sample period were secured, with a temporal increase in secured lending
+- Over half of all loans in the authors sample period were secured, **with a temporal increase in secured lending**
 
 - Larger loans and loans of longer maturity also have less collateral
 
